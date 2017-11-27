@@ -1,3 +1,3 @@
-output "ec2"{
-  value = "${aws_instance.ec2-terraform.id}"
+output "vpc-id"{
+  value = "${aws_vpc.vpc-terraform.id}"
 }
