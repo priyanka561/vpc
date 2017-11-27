@@ -1,3 +1,6 @@
+provider "aws" {
+  region = "${var.aws_region}"
+ }
 resource "aws_vpc" "vpc-terraform" {
   cidr_block = "10.0.0.0/16"
   region = "us-east-1"
