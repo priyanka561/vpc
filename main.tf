@@ -1,7 +1,7 @@
 provider "aws" {
   region = "${var.aws_region}"
-  accesskey = "${var.Access_key}"
-  secretkey = "${var.secretkey}"
+  access_key = "${var.aws_access_key}"
+  secret_key = "${var.aws_secret_key}"
  }
 resource "aws_vpc" "vpc-terraform" {
   cidr_block = "10.0.0.0/16"
