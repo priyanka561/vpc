@@ -1,4 +1,4 @@
-output "vpc-id"{
+output "vpc_id"{
   value = "${aws_vpc.vpc-terraform.id}"
 }
 output "subnet_id" {
