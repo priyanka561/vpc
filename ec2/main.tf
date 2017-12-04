@@ -10,5 +10,9 @@ resource "aws_instance" "ec2-terraform" {
   user_data = "${file("script.sh")}"
    tags {
          Name = "ec2"
+         Owner = "priyanka.elluri"
+         Environment = "Testing"
+         Project = "Reancloud"
+         ExpirationDate = "2017-12-30"
   }
  }
