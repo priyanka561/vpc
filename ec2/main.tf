@@ -6,7 +6,8 @@ resource "aws_instance" "ec2-terraform" {
   instance_type = "t2.micro"
   subnet_id = "${var.public_subnet_id}"
   associate_public_ip_address = "true"
-    vpc_security_group_ids = ["${aws_security_group.security-terraform.id}"]
+  vpc_security_group_ids = ["${aws_security_group.security-terraform.id}"]
+  user_data = "${file("script.sh")}"
    tags {
          Name = "ec2"
   }
