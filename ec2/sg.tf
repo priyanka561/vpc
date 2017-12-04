@@ -4,6 +4,8 @@ resource "aws_security_group" "security-terraform" {
          Name = "security-terraform"
    }
    description = "ONLY HTTP CONNECTION INBOUD"
+   "VPCId": {
+            "Ref": "vpc-terraform"
    ingress {
         from_port = 80
          to_port = 80
