@@ -11,6 +11,12 @@ resource "aws_security_group" "security-terraform" {
          cidr_blocks = ["202.65.158.154/32"]
    }
    ingress {
+        from_port = 80
+         to_port = 80
+         protocol = "TCP"
+         cidr_blocks = ["10.0.0.0/16"]
+   }
+   ingress {
      from_port   = "22"
      to_port     = "22"
     protocol    = "TCP"
