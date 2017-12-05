@@ -19,7 +19,7 @@ resource "aws_subnet" "public_subnet" {
   }
 }
 resource "aws_subnet" "private_1_subnet" {
-  vpc_id                  = "${aws_vpc.vpc-terraform.id}"
+  vpc_id                  = "${aws_vpc.vpc_terraform.id}"
   cidr_block              = "10.0.2.0/24"
   availability_zone = "us-east-1a"
   tags = {
