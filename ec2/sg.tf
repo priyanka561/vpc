@@ -1,4 +1,4 @@
-resource "aws_security_group" "security-tf" {
+resource "aws_security_group" "sec-tf" {
    name = "security-tf"
    tags {
          Name = "security-tf"
