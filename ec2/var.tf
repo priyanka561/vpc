@@ -1,6 +1,6 @@
 variable "public_subnet_id" {
-    default = "subnet-cee143e1"
+    default = "subnet-8fc86aa0"
 }
 variable "vpc_id" {
-    default = "vpc-a37503db"
+    default = "vpc-e8562090"
     }
