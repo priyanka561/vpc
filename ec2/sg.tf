@@ -1,7 +1,7 @@
-resource "aws_security_group" "security-terraform" {
-   name = "security-terraform"
+resource "aws_security_group" "security-tf" {
+   name = "security-tf"
    tags {
-         Name = "security-terraform"
+         Name = "security-tf"
    }
    description = "ONLY HTTP CONNECTION INBOUD"
     vpc_id = "${aws_vpc.vpc_tf.id}"
