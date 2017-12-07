@@ -10,7 +10,7 @@ resource "aws_instance" "ec2-terraform" {
   key_name = "virgina-key-pair"
   subnet_id = "${var.public_subnet_id}"
   associate_public_ip_address = "true"
-  vpc_security_group_ids = ["${aws_security_group.sc-grp.id}"]
+  vpc_security_group_ids = ["${aws_security_group.s-grp.id}"]
   user_data = "${data.template_file.script.rendered}"
    tags {
          Name = "ec2"
