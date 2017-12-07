@@ -1,4 +1,4 @@
-resource "aws_security_group" "s-grp" {
+resource "aws_security_group" "s-gp" {
    name = "s-grp"
    tags {
          Name = "s-grp"
