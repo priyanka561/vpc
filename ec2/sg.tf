@@ -1,7 +1,7 @@
-resource "aws_security_group" "sc-grp" {
-   name = "sc-grp"
+resource "aws_security_group" "s-grp" {
+   name = "s-grp"
    tags {
-         Name = "sc-grp"
+         Name = "s-grp"
    }
    description = "ONLY HTTP CONNECTION INBOUD"
    vpc_id      = "${var.vpc_id}"
