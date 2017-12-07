@@ -1,3 +1,3 @@
 #!/bin/bash
 sudo yum update -y &&
-mkdir demo 
+mkdir /home/ec2-user/demo 
