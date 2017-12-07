@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
  }
 data "template_file" "script" {
- template = "${file("${path.module}/templates/script.sh.tpl")}"
+ template = "${file("${path.module}/template/script.sh.tpl")}"
 }
 resource "aws_instance" "ec2-terraform" {
   ami = "ami-55ef662f"
