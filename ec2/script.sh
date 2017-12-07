@@ -1,4 +1,14 @@
 #!/bin/bash
 sudo yum update -y
-curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P chefdk -c stable -v 2.0.28
-chef --version
+#!/bin/bash
+# Install the chef client and configure chef-solo
+	wget https://packages.chef.io/files/stable/chefdk/1.1.16/ubuntu/16.04/chefdk_1.1.16-1_amd64.deb  &&
+	dpkg -i chefdk_1.1.16-1_amd64.deb &&
+	git clone https://github.com/priyanka561/jenkins.git
+{
+	"run_list" : [
+		"recipe[jenkins]"
+	]
+}
+sudo chef-client --local-mode --runlist 'recipe[jenkins]'
+
