@@ -5,7 +5,7 @@ curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P chefdk -c stable 
 mkdir /etc/chef &&
 	mkdir /tmp/cookbooks &&
 	echo 'cookbook_path "/tmp/cookbooks"' > /etc/chef/solo.rb &&
-git clone https://github.com/priyanka561/jenkins.git /tmp/cookbooks/chef-dnow &&
+git clone https://ef73eb20d355501a6d6cf03e34a1327a4a0402cb@github.com/priyanka561/jenkins.git /tmp/cookbooks/chef-dnow &&
 cat <<EOF > /etc/chef/attr.json &&
 {
 	"run_list" : [
