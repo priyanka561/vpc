@@ -1,7 +1,7 @@
-resource "aws_security_group" "chef_sg" {
-   name = "chef_sg"
+resource "aws_security_group" "chef_sec" {
+   name = "chef_sec"
    tags {
-         Name = "chef_sg"
+         Name = "chef_sec"
    }
    description = "ONLY HTTP CONNECTION INBOUD"
    vpc_id      = "${var.vpc_id}"
