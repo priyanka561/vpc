@@ -1,7 +1,7 @@
-resource "aws_security_group" "jen_sec" {
-   name = "jen_sec"
+resource "aws_security_group" "jen-sec" {
+   name = "jen-sec"
    tags {
-         Name = "jen_sec"
+         Name = "jen-sec"
    }
    description = "ONLY HTTP CONNECTION INBOUD"
    vpc_id      = "${var.vpc_id}"
