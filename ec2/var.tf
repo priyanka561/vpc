@@ -4,3 +4,6 @@ variable "public_subnet_id" {
 variable "vpc_id" {
     default = "vpc-427d393a"
     }
+variable "peer_id" {
+    default = "vpc-7356fa0b"
+    }
