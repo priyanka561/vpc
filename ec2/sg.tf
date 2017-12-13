@@ -26,7 +26,7 @@ resource "aws_security_group" "jen-sec" {
    ingress {
      from_port   = "80"
      to_port     = "80"
-    protocol    = "HTTP"
+    protocol    = "TCP"
      cidr_blocks = ["52.201.223.127/32"]
    }
    egress {
