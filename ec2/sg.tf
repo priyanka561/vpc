@@ -9,7 +9,7 @@ resource "aws_security_group" "jen-sec" {
         from_port = 80
          to_port = 80
          protocol = "TCP"
-         cidr_blocks = ["202.65.158.154/32"]
+         cidr_blocks = ["61.12.88.78/32"]
    }
    ingress {
         from_port = 80
@@ -21,13 +21,13 @@ resource "aws_security_group" "jen-sec" {
      from_port   = "22"
      to_port     = "22"
     protocol    = "TCP"
-     cidr_blocks = ["202.65.158.154/32"]
+     cidr_blocks = ["61.12.88.78/32"]
    }
    ingress {
      from_port   = "80"
      to_port     = "80"
     protocol    = "TCP"
-     cidr_blocks = ["52.201.223.127/32"]
+     cidr_blocks = ["34.218.245.201/32"]
    }
    egress {
     from_port = 0
